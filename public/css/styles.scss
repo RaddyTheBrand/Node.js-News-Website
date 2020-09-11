@@ -1,5 +1,4 @@
 body {
-    background-color: #f3f3f3;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -26,5 +25,26 @@ img {
         display: inline-block;
         text-decoration: none;
     }
+
+}
+
+header {
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+    align-content: stretch;
+    
+    .time {
+        align-self: flex-start;
+    }
+
+    .logo {
+        font-family: 'Kufam', cursive;
+        font-weight: 600;
+    }
+
 
 }

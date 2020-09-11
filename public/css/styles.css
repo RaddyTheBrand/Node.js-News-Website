@@ -1,5 +1,4 @@
 body {
-  background-color: #f3f3f3;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -29,5 +28,35 @@ img {
   background: burlywood;
   display: inline-block;
   text-decoration: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+}
+
+header .time {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+header .logo {
+  font-family: 'Kufam', cursive;
+  font-weight: 600;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -4,13 +4,12 @@ const axios = require('axios')
 require('dotenv').config()
 
 let newsObject = {}
-
 article = ''
 
 // Display News
-const listNews = async (searchPhrase) => {
+const listNews = async () => {
     try {
-        const res = await axios.get(`http://newsapi.org/v2/everything?q=${searchPhrase}&sortBy=publishedAt&apiKey=${process.env.API_KEY}`)
+        const res = await axios.get(`http://newsapi.org/v2/everything?q=node.js&language=en&sortBy=publishedAt&apiKey=${process.env.API_KEY}`)
         newsObject = res.data
     } catch (err) {
         if (err.response) {
@@ -29,12 +28,13 @@ const listNews = async (searchPhrase) => {
     }
 }
 
-listNews()
 
+listNews()
 
 // Router
 router.get('', async (req, res) => {
-    searchPhrase = 'bitcoin'
+  
+
     if( newsObject.status === "error") {
         res.render('index', { articles: null })
     } else {
@@ -52,7 +52,6 @@ router.get('/:id', async (req, res) => {
 router.post('', async (req, res) => {
     let search = req.body.search
     
-
     if( newsObject.status === "error") {
         res.render('index', { articles: null })
     } else {
