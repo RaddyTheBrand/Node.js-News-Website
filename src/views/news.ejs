@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__logo">Node.Js News</div>
+        <%- include('./partials/search.ejs') %>
+    </header>
+
+    <div class="wrapper">
+        <div class="news">
+            <% articles.forEach(function(article, index) { %>
+                <a href="/article/<%- article.id %>" class="news__card">
+                    <!-- article._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url -->
+                    <img src="<%- article.thumbnail_url %>">
+                    <h2><%- article.title.rendered %></h2>
+                    <p><%- article.excerpt.rendered %></p>
+                </a>
+            <% }) %>
+        </div>
+    </div>
+    
+</body>
+</html>

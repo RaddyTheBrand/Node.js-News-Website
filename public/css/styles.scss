@@ -1,50 +1,78 @@
 body {
+    margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f6f6f6;
 }
 
-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+img { max-width: 100%; }
+h2 { font-size: 1.6rem; }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+    background-color: #10555A;
+    margin-bottom: 20px;
+
+    &__nav {
+        padding: 6px;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__search {
+        input[type=text] {
+            padding: 6px;
+            border: none;
+        }
+
+        input[type=submit] {
+            float: right;
+            padding: 6px 10px;
+            border: none;
+            cursor: pointer;
+        }
+    }
 }
 
-.news-wrapper {
+
+
+.button {
+    color: #fff;
+    padding: 20px;
+    background: #10555A;
+    display: inline-block;
+    text-decoration: none;
+}
+ 
+.wrapper {
+    padding: 0 1rem;
+}
+
+.news {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
     grid-gap: 2rem;
 
-    .news-card {
+    &__card {
+        text-decoration: none;
+        color: rgb(10, 10, 10);
         background-color: #fff;
         padding: 20px;
-    }
 
-    .button {
-        color: #fff;
-        padding: 20px;
-        background: burlywood;
-        display: inline-block;
-        text-decoration: none;
-    }
 
+        &:hover {
+            box-shadow: 0 3px 3px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.23);
+        }
+    }
 }
 
-header {
-
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
-	align-items: stretch;
-    align-content: stretch;
-    
-    .time {
-        align-self: flex-start;
-    }
-
-    .logo {
-        font-family: 'Kufam', cursive;
-        font-weight: 600;
-    }
-
-
+.news-single {
+    background-color: #fff;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 2rem;
 }
+

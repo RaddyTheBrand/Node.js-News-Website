@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">Node.Js News</div>
+        <%- include('./partials/search.ejs') %>
+    </header>
+    
+    <div class="news-single">
+        <a href="/"> &larr;- Back </a>
+        <h1><%- article.title.rendered %></h1>
+        <p><%- article.content.rendered %></p>
+    </div>
+    
+</body>
+</html>
