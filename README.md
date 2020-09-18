@@ -1,8 +1,8 @@
-# Node.js News Website
+# Build News Website With Node.js, Express & EJS - WP Rest API
 
 This was created as part of YouTube Video. Links below
 
-![GitHub Logo](https://raddy.co.uk/wp-content/uploads/2020/09/thumbnail-default.jpg)
+![GitHub Logo](https://raddy.co.uk/wp-content/uploads/2020/09/nodejs-news-website-rest-api_compressed.jpg)
 
 ## Installation
 To run this project, install it locally using npm:
@@ -14,9 +14,9 @@ $ npm start
 
 ### YouTube Video & Article
 
-[Node.js Puppeteer Capturing Website Screenshots](https://www.youtube.com/watch?v=azOE6wH-cok)
+[Node.js News Website](https://youtu.be/EkQc-8uzxIA)
 
-[Read Article](https://raddy.co.uk/blog/node-js-puppeteer-capturing-website-screenshots-for-beginners/)
+[Read Article](https://raddy.co.uk/blog/build-news-website-with-node-js-express-ejs-wp-rest-api/)
 
 ### YouTube Channel - RaddyTheBrand
 
