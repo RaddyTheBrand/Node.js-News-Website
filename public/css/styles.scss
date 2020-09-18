@@ -14,13 +14,7 @@ h2 { font-size: 1.6rem; }
     padding: 10px;
     color: #fff;
     background-color: #10555A;
-    margin-bottom: 20px;
-
-    &__nav {
-        padding: 6px;
-        text-align: center;
-        color: #fff;
-    }
+    margin-bottom: 10px;
 
     &__search {
         input[type=text] {
@@ -37,19 +31,7 @@ h2 { font-size: 1.6rem; }
     }
 }
 
-
-
-.button {
-    color: #fff;
-    padding: 20px;
-    background: #10555A;
-    display: inline-block;
-    text-decoration: none;
-}
- 
-.wrapper {
-    padding: 0 1rem;
-}
+.wrapper { padding: 0 1rem }
 
 .news {
     display: grid;
@@ -58,14 +40,14 @@ h2 { font-size: 1.6rem; }
 
     &__card {
         text-decoration: none;
-        color: rgb(10, 10, 10);
+        color: rgb(8, 8, 8);
         background-color: #fff;
         padding: 20px;
-
 
         &:hover {
             box-shadow: 0 3px 3px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.23);
         }
+        
     }
 }
 
@@ -75,4 +57,3 @@ h2 { font-size: 1.6rem; }
     margin: 0 auto;
     padding: 2rem;
 }
-

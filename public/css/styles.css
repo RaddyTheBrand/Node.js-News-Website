@@ -25,13 +25,7 @@ h2 {
   padding: 10px;
   color: #fff;
   background-color: #10555A;
-  margin-bottom: 20px;
-}
-
-.header__nav {
-  padding: 6px;
-  text-align: center;
-  color: #fff;
+  margin-bottom: 10px;
 }
 
 .header__search input[type=text] {
@@ -44,14 +38,6 @@ h2 {
   padding: 6px 10px;
   border: none;
   cursor: pointer;
-}
-
-.button {
-  color: #fff;
-  padding: 20px;
-  background: #10555A;
-  display: inline-block;
-  text-decoration: none;
 }
 
 .wrapper {
@@ -68,7 +54,7 @@ h2 {
 
 .news__card {
   text-decoration: none;
-  color: #0a0a0a;
+  color: #080808;
   background-color: #fff;
   padding: 20px;
 }
