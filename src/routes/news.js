@@ -12,7 +12,7 @@ newsRouter.get('', async(req, res) => {
             console.log(err.response.data)
             console.log(err.response.status)
             console.log(err.response.headers)
-        } else if(err.requiest) {
+        } else if(err.request) {
             res.render('news', { articles : null })
             console.log(err.requiest)
         } else {
