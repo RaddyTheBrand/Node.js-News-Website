@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 
 const app = express()
-const port = 5000
+const port = 3000
 
 // Static Files
 app.use(express.static('public'))
@@ -14,7 +14,7 @@ app.use('/js', express.static(__dirname + 'public/js'))
 app.set('views', './src/views')
 app.set('view engine', 'ejs')
 
-app.use(bodyParser.urlencoded({ extended : true }))
+app.use(bodyParser.urlencoded({ extended: true }))
 
 // Routes
 const newsRouter = require('./src/routes/news')
