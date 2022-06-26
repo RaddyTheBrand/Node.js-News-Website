@@ -26,7 +26,7 @@ newsRouter.get('/:id', async (req, res) => {
     let articleID = req.params.id
 
     try {
-        const newsAPI = await axios.get(`https://raddy.co.uk/wp-json/wp/v2/posts/${articleID}`)
+        const newsAPI = await axios.get(`https://raddy.dev/wp-json/wp/v2/posts/${articleID}`)
         res.render('newsSingle', { article: newsAPI.data })
     } catch (err) {
         if (err.response) {
@@ -48,7 +48,7 @@ newsRouter.get('/:id', async (req, res) => {
 newsRouter.post('', async (req, res) => {
     let search = req.body.search
     try {
-        const newsAPI = await axios.get(`https://raddy.co.uk/wp-json/wp/v2/posts?search=${search}`)
+        const newsAPI = await axios.get(`https://raddy.dev/wp-json/wp/v2/posts?search=${search}`)
         res.render('newsSearch', { articles: newsAPI.data })
     } catch (err) {
         if (err.response) {
