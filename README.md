@@ -25,7 +25,7 @@ $ npm start
 
 ### Website
 
-[www.raddy.co.uk](https://www.raddy.dev)
+[www.raddy.dev](https://www.raddy.dev)
 
 ### Donations
 
